@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color:rgb(25,24,24);
+    width: 200px;
+    height:100px;
+    color: white;
+    margin: 6px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 15px;
+    z-index: 100;
+    padding-top: 15px;
+}
+
+.navbar ul li {
+    background-color:rgb(25,24,24);
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0px;
+
+}
+.navbar ul{
+    background-color:rgb(25,24,24);
+    margin: 15px;
+    padding: 0;
+}
+i{
+    margin-left: 5px;
+    background-color: transparent;
+    padding-right: 18px;
+}
