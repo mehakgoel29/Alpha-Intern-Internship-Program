@@ -127,11 +127,11 @@ i {
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: transparent;
+    background-color:#615e5e;
     border-radius: 2px;
 }
 
@@ -140,7 +140,7 @@ i {
     height: 565px;
     overflow: auto;
     border-radius: 10px;
-    background-image: linear-gradient(to right,rgb(53, 51, 51), grey);
+    background-color: #181818;
     margin-top: 12px;
     margin-left: 6px;
 }
@@ -166,8 +166,8 @@ i {
     line-height: 40px; 
     font-weight: bold;
     color: white;
-}
 
+}
 .icons button {
     border-radius: 30px;
     color: black;
@@ -179,14 +179,17 @@ i {
     font-weight: bold;
     margin-left: 580px;
 }
+.songs{
+    position: relative;
+}
 
 .songs .cover {
     width: 950px;
-    height: 300px;
+    height: 310px;
     margin-left: 10px;
     margin-top: 10px;
     border-radius: 5px;
-    background-image: linear-gradient(to right,black,#333);
+    background-image: linear-gradient(to right,black,grey);
 }
 .cover-img .img1{
     width: 200px;
@@ -194,15 +197,44 @@ i {
     margin: 50px 15px;
     border-radius: 5px;
 }
-.cover-img .img2{
+.cover-img .coverside{
+    position: absolute;
+    top: 70px;
+    left: 250px;
+    color: white;
+    width: 700px;
+    height:200px;
+    border-radius: 5px;
+    float: right;
+    margin-top: 50px;
+    font-size:50px ;
+}
+.cover-img .coverside-content1{
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    color: white;
     width: 700px;
     height:200px;
     border-radius: 5px;
     float: right;
     margin-top: 50px;
 }
+.cover-img .coverside-content2{
+    position: absolute;
+    top: 230px;
+    left: 250px;
+    color: white;
+    width: 700px;
+    height:200px;
+    border-radius: 5px;
+    float: right;
+    margin-top: 50px;
+}
+
 .cover-btns{
     margin-left:260px ;
+    /* margin-bottom: 400px; */
 }
 .cover-btns button{
     border-radius: 30px;
@@ -210,15 +242,325 @@ i {
     border: none;
     padding: 15px;
     width: 80px;
+    position: absolute;
 }
-.cover-btns .play{
-    background-color: rgb(22, 183, 22);
+.cover-btns .Play{
+    background-color: #1db954;
+    top:330px;
+    left: 250px;
+    font-weight: bold;
+
 }
 .cover-btns .dot{
     background-color: transparent;
+    color: white;
+    top:330px;
+    left: 410px;
+    font-weight: bold;
 }
 .cover-btns .save{
     background-color: transparent;
     border: 1px white solid;
     color: white;
+    top:330px;
+    left:340px ;
+    font-weight: bold;
 }
+.front-button{
+    position: relative;
+}
+.all{
+    position: absolute;
+    top:410px;
+    left: 30px;
+    height: 30px;
+    width: 50px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+}
+.podcast{
+    position: absolute;
+    top:410px;
+    left: 90px;
+    height: 30px;
+    width: 80px;
+    border-radius: 30px;
+    border: none;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+.music{
+    position: absolute;
+    top:410px;
+    left: 180px;
+    height: 30px;
+    width: 80px;
+    border-radius: 30px;
+    border: none;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+.play-cards{
+    position: relative;
+}
+.play {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .card1:hover .play,
+  .card2:hover .play {
+    display: flex;
+    background-color: #1db954;
+  }
+.card1{
+    position: absolute;
+    width: 300px;
+    background-image: linear-gradient(to left,black,#333);
+    height: 50px;
+    left: 10px;
+    top: 70px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.card2 img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 5px 0 0px 5px;
+}
+.card1 p{
+    position: absolute;
+    float: left;
+    color: white;
+    left: 70px;
+    top: 15px;
+    font-weight: bold;
+}
+.card1 img{
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px 0 0px 5px;
+}
+.card2 p{
+    position: absolute;
+    float: left;
+    color: white;
+    left: 70px;
+    top: 15px;
+    font-weight: bold;
+}
+.card2{
+    position:absolute;
+    width: 300px;
+    background-image: linear-gradient(to left,black,#333);
+    height: 50px;
+    left: 320px;
+    top: 70px;
+    border-radius: 5px;
+}
+.madeformehak {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 170px;
+    background-color: #181818;
+    
+  }
+  
+  .madeformehak h1 {
+    width: 100%;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .image-cont {
+    width: 200px;
+  color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  }
+  
+  .image-cont img {
+    width: 170px;
+    height: 177px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-top: 5px;
+  }
+  
+  .image-cont h3 {
+    margin: 10px;
+  }
+  
+  .image-cont p {
+    margin: 10px;
+    color: rgb(145, 143, 143);
+  }
+  .image-cont:hover{
+    background-color:rgb(31, 31, 31);
+  }
+.image-cont-play {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 55%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #181818;
+  }
+  .image-cont:hover .image-cont-play {
+    display: flex;
+    background-color: rgb(30, 215, 96);
+  }
+
+ .image-cont-play {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    transform: translateY(-50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #181818;
+  }
+  .favorite-artists-section {
+    padding: 20px;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-header h1 {
+    color: white;
+    
+  }
+  
+  .section-header .show-all {
+    color: #1db954;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .artists-grid {
+    display: flex;
+    gap: 60px;
+  }
+  
+  .artist-card {
+    text-align: center;
+  }
+  
+  .artist-card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .artist-info {
+    margin-top: 10px;
+    color: whitesmoke;
+  }
+  
+  .artist-info h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+  }
+  
+  .artist-info p {
+    margin: 0;
+    color: #b3b3b3;
+    color: gray;
+  }
+ 
+
+
+
+
+  .rp-section {
+    padding: 20px;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-header h1 {
+    color: white;
+    
+  }
+  
+  .section-header .show-all {
+    color: #1db954;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .rp-grid {
+    display: flex;
+    gap: 60px;
+  }
+  
+  .rp-card {
+    text-align: center;
+  }
+  
+  .rp-card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 5%;
+    object-fit: cover;
+  }
+  
+  .rp-info {
+    margin-top: 10px;
+    color: whitesmoke;
+  }
+  
+  .rp-info h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+  }
+  
+  .rp-info p {
+    margin: 0;
+    color: #b3b3b3;
+    color: gray;
+  }
+ 
