@@ -16,7 +16,9 @@ body {
 .container {
     overflow: hidden;
 }
-
+li:hover{
+  color:gray;
+}
 .navbar {
     background-color: rgb(25, 24, 24);
     width: 270px;
@@ -50,7 +52,7 @@ i {
 
 .left {
     width: 270px;
-    height: 73vh;
+    height: 62.2vh;
     overflow-y: auto;
     background-color: rgb(25, 24, 24);
     color: white;
@@ -137,7 +139,7 @@ i {
 
 .songs {
     width: 970px;
-    height: 565px;
+    height: 503px;
     overflow: auto;
     border-radius: 10px;
     background-color: #181818;
@@ -189,7 +191,7 @@ i {
     margin-left: 10px;
     margin-top: 10px;
     border-radius: 5px;
-    background-image: linear-gradient(to right,black,grey);
+    background-image: linear-gradient(to right,black,rgb(91, 89, 89));
 }
 .cover-img .img1{
     width: 200px;
@@ -234,7 +236,6 @@ i {
 
 .cover-btns{
     margin-left:260px ;
-    /* margin-bottom: 400px; */
 }
 .cover-btns button{
     border-radius: 30px;
@@ -563,4 +564,69 @@ i {
     color: #b3b3b3;
     color: gray;
   }
- 
+  
+  .audio-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:black;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .song-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .song-cover {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .song-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .song-title {
+    font-weight: bold;
+  }
+  
+  .player-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .player-controls button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .progress-bar {
+    width: 50%;
+    height: 5px;
+    background-color: #555;
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #1db954;
+    width: 0%;
+  }
+  
+  .song-time {
+    white-space: nowrap;
+    margin-right: 100px;
+  }
