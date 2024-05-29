@@ -27,7 +27,7 @@ li:hover{
     margin: 6px;
     margin-top: 10px;
     padding-left: 10px;
-    border-radius: 15px;
+    border-radius: 8px;
     padding-top: 15px;
 }
 
@@ -52,14 +52,14 @@ i {
 
 .left {
     width: 270px;
-    height: 62.2vh;
+    height: 58vh;
     overflow-y: auto;
     background-color: rgb(25, 24, 24);
     color: white;
     margin: 6px;
     margin-top: 10px;
     padding-left: 10px;
-    border-radius: 15px;
+    border-radius: 8px;
     padding-top: 15px;
 }
 
@@ -139,10 +139,10 @@ i {
 
 .songs {
     width: 970px;
-    height: 503px;
+    height: 475px;
     overflow: auto;
-    border-radius: 10px;
-    background-color: #181818;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, rgb(34, 34, 34),rgb(33, 33, 33), rgb(33, 33, 33), rgb(40, 40, 40));
     margin-top: 12px;
     margin-left: 6px;
 }
@@ -158,7 +158,9 @@ i {
 
 .icons {
     margin-left: 5px;
-    margin-top: 3px
+    position: fixed;
+    background-color: rgb(34, 34, 34);
+    width: 970px; ;
 }
 
 .icons i {
@@ -168,30 +170,41 @@ i {
     line-height: 40px; 
     font-weight: bold;
     color: white;
-
 }
+.fa-user-friends{
+  position: absolute;
+  top: 15px;
+  left: 860px;
+}
+
 .icons button {
     border-radius: 30px;
-    color: black;
+    height: 35px;
+    background-color: #1db954;
+    color:white;
     border: none;
-    padding: 15px;
+    padding: 10px;
     width: auto;
-    margin-top: 20px;
+    margin-top: 18px;
     font-size: 14px;
-    font-weight: bold;
     margin-left: 580px;
+    transition:transform 0.3s ease;
+}
+.icons button:hover{
+  transform: scale(1.05);
 }
 .songs{
     position: relative;
 }
-
+/* --------------------------------------cover---------------------------------------------------------- */
 .songs .cover {
     width: 950px;
     height: 310px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 80px;
     border-radius: 5px;
-    background-image: linear-gradient(to right,black,rgb(91, 89, 89));
+    background-image: linear-gradient(to right,black,rgb(33, 33, 33), rgb(33, 33, 33),black);
+    
 }
 .cover-img .img1{
     width: 200px;
@@ -244,6 +257,11 @@ i {
     padding: 15px;
     width: 80px;
     position: absolute;
+    transition:transform 0.3s ease;
+
+} 
+.cover-btns .Play:hover, .save:hover{
+  transform: scale(1.05);
 }
 .cover-btns .Play{
     background-color: #1db954;
@@ -267,6 +285,7 @@ i {
     left:340px ;
     font-weight: bold;
 }
+/* -------------------------------------3 buttons------------------------------------------------ */
 .front-button{
     position: relative;
 }
@@ -306,6 +325,8 @@ i {
     color: white;
     font-weight: bold;
 }
+
+/* -------------------------------------------------------cards--------------------------------------------- */
 .play-cards{
     position: relative;
 }
@@ -314,17 +335,29 @@ i {
     height: 40px;
     border-radius: 50%;
     position: absolute;
+    transform: translate(50%);
     top: 50%;
     right: 10px;
-    transform: translateY(-50%);
-    display: none;
     align-items: center;
     justify-content: center;
+  }
+  .card1 .play,
+  .card2 .play {
+    display: flex;
+    opacity: 0;
+    background-color: #1db954;
+    transform: translateY(-20px);
+    transition: all ease 0.4s;
   }
   .card1:hover .play,
   .card2:hover .play {
     display: flex;
     background-color: #1db954;
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+  .card1:hover ,.card2:hover{
+    background-image: linear-gradient(#282828,#282828);
   }
 .card1{
     position: absolute;
@@ -374,85 +407,83 @@ i {
     top: 70px;
     border-radius: 5px;
 }
-.madeformehak {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 20px;
-    padding: 20px;
-    margin-top: 170px;
-    background-color: #181818;
-    
-  }
-  
-  .madeformehak h1 {
-    width: 100%;
-    color: white;
-    margin-bottom: 20px;
-  }
-  
-  .image-cont {
-    width: 200px;
-  color: white;
-  border-radius: 5px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  }
-  
-  .image-cont img {
-    width: 170px;
-    height: 177px;
-    border-radius: 5px;
-    object-fit: cover;
-    margin-top: 5px;
-  }
-  
-  .image-cont h3 {
-    margin: 10px;
-  }
-  
-  .image-cont p {
-    margin: 10px;
-    color: rgb(145, 143, 143);
-  }
-  .image-cont:hover{
-    background-color:rgb(31, 31, 31);
-  }
-.image-cont-play {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    position: absolute;
-    top: 55%;
-    right: 20px;
-    transform: translateY(-50%);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    color: #181818;
-  }
-  .image-cont:hover .image-cont-play {
-    display: flex;
-    background-color: rgb(30, 215, 96);
-  }
 
- .image-cont-play {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    transform: translateY(-50%);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    color: #181818;
-  }
+/* -----------------------------------------made for you -------------------------------------------- */
+.spotify-playlists {
+  padding: 150px 20px 10px;
+}
+
+.spotify-playlists h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.spotify-playlists .list {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.spotify-playlists .list .item {
+  min-width: 140px;
+  width: 160px;
+  padding: 15px;
+  /* background-color: #181818; */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+
+.spotify-playlists .list .item:hover {
+  background-color: #252525;
+}
+
+.spotify-playlists .list .item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.spotify-playlists .list .item .p-play
+{
+  position: relative;
+  background-color: #181818;
+}
+
+.spotify-playlists .list .item .p-play .fa {
+  position: absolute;
+  right: 5px;
+  top: -50px;
+  padding: 15px;
+  background-color: #1db954;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+
+.spotify-playlists .list .item:hover .p-play .fa {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.spotify-playlists .list .item h4 {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spotify-playlists .list .item p {
+  color: #989898;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+/*----------------------------------- favourite artist------------------------------------------ */
   .favorite-artists-section {
     padding: 20px;
   }
@@ -507,10 +538,7 @@ i {
     color: gray;
   }
  
-
-
-
-
+  /* ------------------------------------------recently played------------------------------------- */
   .rp-section {
     padding: 20px;
   }
@@ -564,11 +592,14 @@ i {
     color: #b3b3b3;
     color: gray;
   }
+
+  /* --------------------------------------------------------------audioplayer------------------------------------ */
   
   .audio-player {
     position: fixed;
     bottom: 0;
     left: 0;
+    height: 80px;
     width: 100%;
     background-color:black;
     color: #fff;
@@ -576,6 +607,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 9;
   }
   
   .song-info {
@@ -588,13 +620,27 @@ i {
     height: 50px;
     object-fit: cover;
     margin-right: 10px;
+    position: absolute;
+    left: 30px;
+    border-radius: 50%;
+    
   }
   
   .song-details {
     display: flex;
     flex-direction: column;
+    margin-left: 90px;
   }
-  
+  .song-details h3{
+    font-size: 14px;
+    color: aliceblue;
+  }
+  .song-details p{
+    font-size: 12px;
+    padding-top: 2px;
+    color: rgb(199, 198, 198);
+    font-weight: bold;
+  }
   .song-title {
     font-weight: bold;
   }
@@ -602,22 +648,39 @@ i {
   .player-controls {
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 87vh;
+    top:15px;
+    margin-left: 150px;
   }
   
   .player-controls button {
-    background-color: transparent;
+    background-color:transparent;
     border: none;
     color: #fff;
     cursor: pointer;
     margin: 0 5px;
+    border-radius: 50%;
   }
   
+  .player-controls .play-pause-button{
+    background-color:white;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
   .progress-bar {
     width: 50%;
     height: 5px;
     background-color: #555;
     margin: 0 10px;
     position: relative;
+    margin-top: 20px;
+    margin-left: 15vh;
   }
   
   .progress {
@@ -628,5 +691,6 @@ i {
   
   .song-time {
     white-space: nowrap;
-    margin-right: 100px;
+    margin-right: 150px;
+    margin-top: 20px;
   }
