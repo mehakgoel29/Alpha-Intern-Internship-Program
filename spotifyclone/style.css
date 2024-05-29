@@ -52,7 +52,7 @@ i {
 
 .left {
     width: 270px;
-    height: 58vh;
+    height: 57vh;
     overflow-y: auto;
     background-color: rgb(25, 24, 24);
     color: white;
@@ -138,7 +138,7 @@ i {
 }
 
 .songs {
-    width: 970px;
+    width: 980px;
     height: 475px;
     overflow: auto;
     border-radius: 8px;
@@ -169,19 +169,24 @@ i {
     height: 45px;
     line-height: 40px; 
     font-weight: bold;
-    color: white;
+    color: gray;
 }
 .fa-user-friends{
   position: absolute;
   top: 15px;
   left: 860px;
 }
-
+.fa-bell{
+  position: absolute;
+  top: 16px;
+  left: 830px;
+}
 .icons button {
     border-radius: 30px;
     height: 35px;
-    background-color: #1db954;
-    color:white;
+    background-color:white;
+    color:black;
+    font-weight: bold;
     border: none;
     padding: 10px;
     width: auto;
@@ -618,9 +623,9 @@ i {
   .song-cover {
     width: 50px;
     height: 50px;
-    object-fit: cover;
     margin-right: 10px;
     position: absolute;
+    object-fit: cover;
     left: 30px;
     border-radius: 50%;
     
