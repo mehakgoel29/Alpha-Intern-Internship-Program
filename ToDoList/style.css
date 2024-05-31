@@ -18,7 +18,6 @@ body {
   border-radius: 2px;
 }
 
-
 .container {
     width: 400px;
     height: 400px;
@@ -27,7 +26,7 @@ body {
     background: transparent;
     border: 2px solid rgb(187, 187, 196);
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     overflow: hidden;
 }
 
@@ -132,9 +131,9 @@ h1 {
     cursor: pointer;
 }
 .completed .fa-check-circle {
-    color: rgb(53, 248, 53);
+    color: rgb(53, 248, 53);    
 }
 .fa-trash {
-    color: white;
+    color:rgb(40, 7, 71);
     cursor: pointer;
 }
