@@ -33,6 +33,14 @@
     ul {
       list-style-type: none;
     } 
+    .frontend-developer {
+        font-size: 2em;
+        font-weight: bold;
+        background: linear-gradient(to right bottom ,rgb(243, 88, 135),rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center; 
+    }
     .resume{
       position: relative;
     }
@@ -73,7 +81,7 @@
     .social-icons a {
       text-decoration: none;
       font-size: 30px;
-      color: rgb(135, 132, 132);
+      color: rgb(181, 179, 179);
     }  
     .social-icons i:hover {
       transform: translateY(-10px);
