@@ -314,7 +314,7 @@
       transition: transform 1s;
     }
     img:hover{
-      transform:translateY(-20px);
+      transform: scale(1.05);
     }
     .images{
       display: flex;
